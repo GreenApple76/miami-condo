@@ -1,0 +1,175 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    width: 100%;
+    min-height: 35%;
+    background: url(../img/hero.jpg) no-repeat top center; 
+    background-size: 100% auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    color: #fff;
+    border: 2px solid yellow;
+}
+
+.phone-number, .call-to-action, .logo {
+    flex-grow: 1;
+    flex-basis: 33.333%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: #9c9fb1;
+}
+
+.phone-number, .call-to-action {
+    padding-top: 2.5rem;
+}
+
+nav {
+    width: 100%;
+    align-self: flex-end;
+    border: 2px solid green;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgb(0, 0, 78);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav a {
+    color: #fff;
+    text-shadow: 2px 2px 10px #333;
+    text-decoration: none;
+    flex: 1;
+}
+
+nav a:last-of-type {
+    /* padding-right: 37px; */
+}
+
+nav ul li {
+    display: flex;
+    flex: 1; 
+}
+
+.intro, .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.intro {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.headline, .main {
+    padding: 2rem;
+}
+
+.headline {
+    flex: 1;
+}
+
+.main {
+    flex: 4;
+}
+
+.gallery {
+    width: 100%;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery-headline {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    flex: 1 1 100%;
+    flex-wrap: wrap;
+    margin-top: -2.5rem;
+}
+
+.gallery .hr-line {
+    display: flex;
+    justify-content: center;
+    flex: 1 1 100%;
+    margin-top: -1rem;
+    margin-bottom: 3rem;
+}
+
+.gallery .homes {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    justify-content: space-around;
+    min-width: 0;
+}
+
+.gallery .homes img {
+    max-width: 100%;
+    margin: .5rem;
+}
+
+.gallery .home-desc {
+    flex: 1 1 100%;
+    justify-content: space-around;
+    margin: 0.75rem 0 2rem 2rem;
+}
+
+.gallery .location {
+    color: #00aaef;
+}
+
+@media (min-width: 768px) {
+    nav {
+        background-color: transparent;
+        flex-direction: row;
+    }
+
+    nav div {
+        display: flex;
+        flex: 1 1 auto;
+        justify-content: space-evenly;
+    }
+
+    nav a {
+        text-align: center;
+    }
+}
+
+@media (min-width: 940px) {
+    .hero {
+        min-height: 45%;
+    }
+
+    nav {
+        margin-top: -17rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hero {
+        min-height: 55%;
+    }
+
+    nav {
+        margin-top: -7rem;
+    }
+}
