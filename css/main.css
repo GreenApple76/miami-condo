@@ -54,14 +54,14 @@ nav a:hover {
     text-decoration: none;
 }
 
-.intro, .gallery, .consult {
+#about, #gallery, #consult, #testimonials {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
 }
 
-.intro {
+#about {
     padding-top: 4rem;
     padding-bottom: 4rem;
 }
@@ -78,12 +78,9 @@ nav a:hover {
     flex: 4;
 }
 
-.gallery {
+#gallery {
     width: 100%;
     background-color: #eee;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
     padding-bottom: 4rem;
 }
 
@@ -96,7 +93,7 @@ nav a:hover {
     margin-top: -2rem;
 }
 
-.gallery .hr-line, .consult .hr-line {
+#gallery .hr-line, #consult .hr-line {
     display: flex;
     justify-content: center;
     flex: 1 1 100%;
@@ -104,7 +101,7 @@ nav a:hover {
     margin-bottom: 3rem;
 }
 
-.gallery .homes {
+#gallery .homes {
     display: flex;
     flex-wrap: wrap;
     flex: 1 1 auto; 
@@ -112,22 +109,22 @@ nav a:hover {
     min-width: 0;
 }
 
-.gallery .homes img {
+#gallery .homes img {
     max-width: 100%;
     margin: .5rem;
 }
 
-.gallery .home-desc {
+#gallery .home-desc {
     flex: 1 1 100%;
     justify-content: space-around;
     margin: 0.75rem 0 2rem 2rem;
 }
 
-.gallery .location {
+#gallery .location {
     color: #00aaef;
 }
 
-.gallery .view-all {
+#gallery .view-all {
     margin: 2rem, 0, 2rem, 0;
     padding-bottom: 4rem;
 }
@@ -143,11 +140,11 @@ nav a:hover {
     background-color: #0079a9;
 }
 
-.gallery .btn {
+#gallery .btn {
     margin-bottom: 3rem;
 }
 
-.consult {
+#consult {
     padding-bottom: 5rem;
 }
 
