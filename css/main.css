@@ -191,7 +191,7 @@ h1 {
     left: .75rem;
 }
 
-.contact-intro > div {
+.contact-intro div {
     font-size: 1.5rem;
     flex: 1 1 100%;
     margin-bottom: 1rem;
@@ -200,6 +200,26 @@ h1 {
 .contact-intro div a {
     text-decoration: none;
 }
+
+footer {
+    width: 100%;
+    min-height: 10%;
+    background: url(../img/footer.jpg) no-repeat top center; 
+    background-size: 100% auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    color: #fff;
+}
+
+footer div {
+    flex: 1 1 100%;
+    text-align: center;
+}
+
 @media (min-width: 768px) {
     nav {
         background-color: transparent;
@@ -218,6 +238,10 @@ h1 {
 
     .headline, .main {
         padding-top: 2rem;
+    }
+
+    footer {
+        min-height: 25%;
     }
 }
 
