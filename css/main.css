@@ -68,7 +68,7 @@ h1 {
     margin-top: 0;
 }
 
-#about, #gallery, #consult, #testimonials {
+#about, #gallery, #consult, #testimonials, #contact {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -91,7 +91,7 @@ h1 {
     background-color: #eee;
 }
 
-.gallery-headline, .consult-headline, .testimonials-headline {
+.gallery-headline, .consult-headline, .testimonials-headline, .contact-headline {
     font-size: 2.5rem;
     display: flex;
     justify-content: center;
@@ -100,7 +100,7 @@ h1 {
     margin-top: -2rem;
 }
 
-#gallery .hr-line, #consult .hr-line, #testimonials .hr-line {
+#gallery .hr-line, #consult .hr-line, #testimonials .hr-line, #contact .hr-line {
     display: flex;
     justify-content: center;
     flex: 1 1 100%;
@@ -150,7 +150,7 @@ h1 {
     font-size: 2rem;
 }
 
-.consult-form, .consult-intro {
+.consult-form, .consult-intro, .contact-form, .contact-intro {
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
@@ -159,12 +159,12 @@ h1 {
     padding-left: 2rem;
 }
 
-.consult-form form {
+.consult-form form, .contact-form form {
     display: flex;
     flex-wrap: wrap;
 }
 
-.consult-form input {
+.consult-form input, .contact-form input, .contact-form textarea {
     flex-basis: 100%;
     margin-bottom: 1rem;
 }
@@ -191,6 +191,15 @@ h1 {
     left: .75rem;
 }
 
+.contact-intro > div {
+    font-size: 1.5rem;
+    flex: 1 1 100%;
+    margin-bottom: 1rem;
+}
+
+.contact-intro div a {
+    text-decoration: none;
+}
 @media (min-width: 768px) {
     nav {
         background-color: transparent;
